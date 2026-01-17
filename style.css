@@ -694,6 +694,180 @@ section {
     margin-bottom: 3rem;
 }
 
+/* Setlist Highlight Styles */
+.setlist-highlight {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(0, 243, 255, 0.1), rgba(176, 37, 255, 0.1));
+    border: 2px solid var(--accent-cyan);
+    animation: setlistGlow 3s ease-in-out infinite;
+}
+
+@keyframes setlistGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(176, 37, 255, 0.5);
+    }
+}
+
+.setlist-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.setlist-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    animation: badgePulse 2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.setlist-header h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.75rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.setlist-date {
+    color: var(--accent-purple);
+    font-weight: 600;
+}
+
+.setlist-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.setlist-item {
+    display: grid;
+    grid-template-columns: 60px 1fr 1.5fr;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.setlist-item:hover {
+    background: rgba(0, 243, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.setlist-item .time {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--accent-cyan);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.setlist-item .artist {
+    color: var(--accent-purple);
+    font-weight: 600;
+}
+
+.setlist-item .title {
+    color: var(--text-primary);
+}
+
+.setlist-item.winner {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.15), rgba(255, 255, 255, 0.03));
+    border-left: 3px solid gold;
+}
+
+.setlist-item.winner:hover {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.25), rgba(0, 243, 255, 0.1));
+}
+
+.setlist-note {
+    text-align: center;
+    color: gold;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+/* NEW Badge for Videos */
+.new-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: linear-gradient(135deg, #ff0080, #ff4500);
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+    animation: newBadgePulse 1.5s ease-in-out infinite;
+}
+
+@keyframes newBadgePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255, 69, 0, 0.7);
+    }
+}
+
+.video-card.featured {
+    border: 2px solid var(--accent-cyan);
+    animation: featuredGlow 3s ease-in-out infinite;
+}
+
+@keyframes featuredGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(176, 37, 255, 0.5);
+    }
+}
+
+@media (max-width: 768px) {
+    .setlist-item {
+        grid-template-columns: 50px 1fr;
+        gap: 0.5rem;
+    }
+
+    .setlist-item .title {
+        grid-column: 1 / -1;
+        margin-top: 0.25rem;
+    }
+}
+
+
 .video-card {
     overflow: hidden;
     text-decoration: none;
