@@ -1323,3 +1323,91 @@ section {
         padding: 1.5rem;
     }
 }
+
+/* Special Announcement Banner */
+.special-announcement {
+    padding: 1.5rem 0;
+}
+
+.announcement-banner {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(232, 17, 79, 0.5);
+    background: linear-gradient(135deg, rgba(232, 17, 79, 0.15), rgba(176, 37, 255, 0.1));
+    border-radius: 16px;
+    padding: 1.25rem 2rem;
+    transition: all 0.3s ease;
+    animation: announcementGlow 3s ease-in-out infinite;
+}
+
+.announcement-banner * {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.announcement-banner:hover {
+    border-color: rgba(232, 17, 79, 0.9);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 40px rgba(232, 17, 79, 0.3);
+}
+
+@keyframes announcementGlow {
+    0%, 100% { box-shadow: 0 0 15px rgba(232, 17, 79, 0.2); }
+    50% { box-shadow: 0 0 30px rgba(232, 17, 79, 0.4); }
+}
+
+.announcement-badge {
+    background: #e8114f;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.announcement-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+}
+
+.announcement-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.announcement-sub {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.announcement-arrow {
+    font-size: 1.5rem;
+    color: #e8114f;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.announcement-banner:hover .announcement-arrow {
+    transform: translateX(5px);
+}
+
+@media (max-width: 600px) {
+    .announcement-banner {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem 1.25rem;
+    }
+
+    .announcement-title {
+        font-size: 1rem;
+    }
+}
