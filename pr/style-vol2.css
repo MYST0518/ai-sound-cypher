@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #e8114f; /* MakotoAI Red accent */
-    --primary-hover: #c40a3f;
+    --primary-color: #e60012; /* Matching the red in the provided image */
+    --primary-hover: #c4000f;
     --text-main: #333333;
     --text-light: #666666;
-    --bg-body: #f5f6f8;
+    --bg-body: #f8f9fa;
     --bg-surface: #ffffff;
     --border-color: #eaeaea;
     --font-sans: 'Inter', 'Noto Sans JP', sans-serif;
@@ -11,7 +11,7 @@
     --radius-md: 8px;
     --radius-lg: 12px;
     --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 20px rgba(230, 0, 18, 0.1);
 }
 
 * {
@@ -52,7 +52,7 @@ body {
 }
 
 .pr-label {
-    background-color: #000;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 4px 8px;
     border-radius: var(--radius-sm);
@@ -112,13 +112,6 @@ body {
     object-fit: cover;
 }
 
-.main-visual figcaption {
-    font-size: 0.8rem;
-    color: var(--text-light);
-    text-align: right;
-    margin-top: 8px;
-}
-
 /* Article Body */
 .article-body .lead {
     font-size: 1.15rem;
@@ -131,7 +124,7 @@ body {
 }
 
 .article-body strong {
-    background: linear-gradient(transparent 70%, rgba(232, 17, 79, 0.2) 70%);
+    background: linear-gradient(transparent 70%, rgba(230, 0, 18, 0.1) 70%);
 }
 
 .info-section {
@@ -139,10 +132,10 @@ body {
 }
 
 .info-section.highlight {
-    background-color: #fafafa;
+    background-color: #fffafb;
     padding: 32px;
     border-radius: var(--radius-md);
-    border: 1px solid var(--border-color);
+    border: 1px solid #ffebeb;
 }
 
 .section-title {
@@ -205,8 +198,8 @@ body {
 
 /* Link Cards */
 .link-cards {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 16px;
     margin-top: 24px;
 }
@@ -247,10 +240,6 @@ body {
     color: var(--primary-color);
 }
 
-.link-card .icon {
-    color: var(--text-light);
-}
-
 /* Footer */
 .article-footer {
     margin-top: 64px;
@@ -259,25 +248,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.9rem;
-    color: var(--text-light);
 }
 
 .btn-share {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 8px 24px;
     border-radius: 20px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     transition: opacity 0.2s;
-}
-
-.btn-share:hover {
-    opacity: 0.8;
-}
-
-.btn-x {
     background-color: #000;
     color: #fff;
 }

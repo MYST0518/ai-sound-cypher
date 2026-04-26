@@ -1,339 +1,99 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI Sound Cypher - 川越の夜にAI音楽だけが鳴り響く|ラジオ川越88.7MHz 毎週金曜日24:30-25:00">
-    <title>AI Sound Cypher | ラジオ川越88.7MHz</title>
-    <link rel="icon" type="image/png" href="asc-logo.png">
-    <link rel="apple-touch-icon" href="asc-logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="vote.css">
+    <title>プレスリリース一覧 | AI Sound Cypher</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../asc-logo.png">
+    <style>
+        :root {
+            --primary: #bc13fe;
+            --bg: #0f0a1a;
+            --surface: #1a1425;
+            --text: #ffffff;
+        }
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 0.1em;
+            color: var(--primary);
+            text-shadow: 0 0 15px rgba(188, 19, 254, 0.5);
+        }
+        .pr-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .pr-item {
+            background-color: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #332a40;
+            transition: all 0.3s ease;
+        }
+        .pr-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(188, 19, 254, 0.2);
+        }
+        .date {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 60px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-home:hover {
+            color: var(--primary);
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Animated Background -->
-    <div class="bg-animation"></div>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <img src="asc-logo.png" alt="AI Sound Cypher Logo" class="logo">
-                <h1 class="glitch" data-text="AI SOUND CYPHER">AI SOUND CYPHER</h1>
-                <p class="tagline">川越の夜にAI音楽だけが鳴り響く</p>
-                <div class="broadcast-info">
-                    <div class="info-card">
-                        <span class="label">放送局</span>
-                        <span class="value">ラジオ川越88.7MHz</span>
-                    </div>
-                    <div class="info-card">
-                        <span class="label">放送時間</span>
-                        <span class="value">毎週金曜日 24:30-25:00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Special Announcement Banner -->
-    <section class="special-announcement">
-        <div class="container">
-            <!-- Latest: Kyu Masayuki -->
-            <a href="./pr/vol2.html" class="announcement-banner glass latest">
-                <div class="announcement-badge">📢 NEW SPECIAL</div>
-                <div class="announcement-text">
-                    <span class="announcement-title">旧雅之 スペシャル 放送決定！</span>
-                    <span class="announcement-sub">AI音楽界の異端児・旧雅之が襲来！5月8日（金）深夜、ラジオ川越を完全占拠</span>
-                </div>
-                <div class="announcement-arrow">→</div>
+    <div class="container">
+        <h1>PRESS RELEASES</h1>
+        <div class="pr-list">
+            <a href="vol2.html" class="pr-item">
+                <span class="date">2026.04.25</span>
+                <div class="title">【ラジオ川越】異例の「番組ジャック」第2弾！AI音楽界の異端児・旧雅之が襲来</div>
             </a>
-            
-            <!-- Previous: MakotoAI -->
-            <a href="./pr/vol1.html" class="announcement-banner glass secondary-announcement">
-                <div class="announcement-badge">📢 ARCHIVE</div>
-                <div class="announcement-text">
-                    <span class="announcement-title">MakotoAI スペシャル 放送！</span>
-                    <span class="announcement-sub">4月17日（金）24:30〜 川越の夜をAIサウンドで染め上げた番組ジャック</span>
-                </div>
-                <div class="announcement-arrow">→</div>
+            <a href="vol1.html" class="pr-item">
+                <span class="date">2026.04.05</span>
+                <div class="title">【ラジオ川越】AIアーティスト・MakotoAIが番組を完全ジャック！ 「AIサウンドサイファー MakotoAIスペシャル」放送決定</div>
             </a>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">ABOUT THE SHOW</h2>
-            <div class="about-content">
-                <div class="about-card glass">
-                    <h3>AI音楽の最前線</h3>
-                    <p>AI Sound Cypherは、AIが生成した音楽だけを厳選してお届けする、世界でも稀有なラジオ番組です。深夜の川越から、AIが創り出す未来のサウンドを発信します。</p>
-                </div>
-                <div class="about-card glass">
-                    <h3>毎月のテーマ</h3>
-                    <p>月替わりのテーマに沿って、リスナーの皆様からAI音楽作品を募集し、選ばれた楽曲は番組内でオンエアされます。</p>
-                </div>
-                <div class="about-card glass">
-                    <h3>番組ジャックの権利が！</h3>
-                    <p>番組でかけた楽曲の中から毎週1人に番組特製ステッカーをプレゼント！3枚集めたら番組ジャックの権利が！！</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Personality Section -->
-    <section class="personality" id="personality">
-        <div class="container">
-            <h2 class="section-title">PERSONALITY</h2>
-            <div class="personality-card glass">
-                <div class="personality-avatar">
-                    <img src="miya-profile.jpg" alt="miya" class="avatar-image">
-                </div>
-                <div class="personality-info">
-                    <h3 class="personality-name">miya</h3>
-                    <p class="personality-title">AI音楽を日本一流すラジオDJ</p>
-                    <p class="personality-desc">ラジオ川越88.7MHz パーソナリティ</p>
-                    <div class="personality-social">
-                        <a href="https://x.com/miya_SUEMYST" target="_blank" class="social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                            </svg>
-                            <span>@miya_SUEMYST</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Submission Section -->
-    <section class="submission" id="submit">
-        <div class="container">
-            <h2 class="section-title">SUBMIT YOUR TRACK</h2>
-
-
-
-            <!-- 5月テーマ（募集中） -->
-            <div class="theme-announcement glass">
-                <span class="theme-label">募集中</span>
-                <h3 class="current-theme">5月テーマ「生」</h3>
-                <p class="theme-description">
-                    5月のテーマは「生」。<br>
-                    「生きる」「生まれる」「生(なま)」「一生」…<br>
-                    あなたの解釈で、自由に音楽を創ってください。<br>
-                    お一人様1曲まで。
-                </p>
-                <a href="https://forms.gle/2siY5gvbh5euLDVo8" target="_blank" class="btn-submit-theme">
-                    📝 応募フォームはこちら
-                </a>
-            </div>
-
-            <!-- 4月テーマ（募集終了） -->
-            <div class="theme-announcement glass theme-closed">
-                <span class="theme-label closed">募集終了</span>
-                <h3 class="current-theme">4月テーマ「BPM100」</h3>
-                <p class="theme-description">4月の募集を〆切ました。<br>ご応募ありがとうございました！</p>
-            </div>
-
-            <div class="submission-note">
-                <p>※応募された楽曲は審査の上、番組内で紹介させていただきます。</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- How to Listen Section -->
-    <section class="listen" id="listen">
-        <div class="container">
-            <h2 class="section-title">HOW TO LISTEN</h2>
-            <p class="section-subtitle">番組の視聴方法</p>
-            <div class="listen-grid">
-                <a href="https://musicbird.jp/cfm/radimo/" target="_blank" class="listen-card glass">
-                    <div class="listen-icon">📱</div>
-                    <h3>アプリ</h3>
-                    <p class="listen-name">レディモ</p>
-                    <span class="listen-link">ダウンロードはこちら</span>
-                </a>
-                <a href="https://www.jcbasimul.com/radiokawagoe" target="_blank" class="listen-card glass">
-                    <div class="listen-icon">🌐</div>
-                    <h3>インターネット</h3>
-                    <p class="listen-name">JCBA</p>
-                    <span class="listen-link">聴く</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Archive Section -->
-    <section class="archive" id="archive">
-        <div class="container">
-            <h2 class="section-title">ARCHIVE</h2>
-            <p class="section-subtitle">過去の放送をYouTubeでチェック!</p>
-
-            <!-- 最新放送セットリスト -->
-            <div class="setlist-highlight glass">
-                <div class="setlist-header">
-                    <span class="setlist-badge">🎵 LATEST</span>
-                    <h3>Vol.28 セットリスト</h3>
-                    <p class="setlist-date">2026.04.24 放送</p>
-                </div>
-                <div class="setlist-content">
-                    <div class="setlist-item"><span class="time">00:00</span><span class="artist"></span><span class="title">OP</span></div>
-                    <div class="setlist-item"><span class="time">01:08</span><span class="artist">Jiron27</span><span class="title">TOMATIN</span></div>
-                    <div class="setlist-item"><span class="time">04:02</span><span class="artist">Ωdim⁷</span><span class="title">彼氏ほしーな、春だし Future Funk Double Time MIX</span></div>
-                    <div class="setlist-item"><span class="time">05:43</span><span class="artist">関西方麺</span><span class="title">Slow but Groove</span></div>
-                    <div class="setlist-item"><span class="time">08:12</span><span class="artist">Strix8</span><span class="title">完全律動体</span></div>
-                    <div class="setlist-item"><span class="time">10:24</span><span class="artist">Stingray Tokyoska</span><span class="title">Time1ess G1ide</span></div>
-                    <div class="setlist-item"><span class="time">12:32</span><span class="artist">みつじ</span><span class="title">100th Noise</span></div>
-                    <div class="setlist-item"><span class="time">14:29</span><span class="artist">Liam</span><span class="title">Where You Begin</span></div>
-                    <div class="setlist-item"><span class="time">16:56</span><span class="artist">RYU:GiN</span><span class="title">嘘</span></div>
-                    <div class="setlist-item"><span class="time">19:02</span><span class="artist">旧雅之</span><span class="title">You always look down on me</span></div>
-                    <div class="setlist-item"><span class="time">21:40</span><span class="artist">茶トラ-Brown tiger cat music-</span><span class="title">君への祈り</span></div>
-                    <div class="setlist-item"><span class="time">23:15</span><span class="artist">GOKIGEN Tiger</span><span class="title">雨よ、もっと降ってくれ</span></div>
-                    <div class="setlist-item"><span class="time">25:03</span><span class="artist">haizancore</span><span class="title">流水</span></div>
-                    <div class="setlist-item"><span class="time">27:34</span><span class="artist">AinN3gRaM</span><span class="title">Visiora.</span></div>
-                </div>
-                <div class="listener-vote-area">
-                    <p class="vote-deadline">🗳️ リスナー投票受付中！ (5/1まで)</p>
-                    <a href="https://forms.gle/7vMBWh1mMsMGezEcA" target="_blank" class="btn-vote">
-                        投票フォームはこちら
-                    </a>
-                </div>
-            </div>
-
-            <div class="archive-grid">
-                <!-- YouTube Video 1 - Vol.28 最新 -->
-                <a href="https://youtu.be/M1-YPLwwwJ4" target="_blank" class="video-card glass featured">
-                    <div class="video-wrapper thumbnail-wrapper">
-                        <img src="https://img.youtube.com/vi/M1-YPLwwwJ4/maxresdefault.jpg" alt="AI Sound Cypher Vol.28"
-                            class="video-thumbnail">
-                        <div class="play-button">
-                            <svg viewBox="0 0 68 48" width="68" height="48">
-                                <path
-                                    d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
-                                    fill="#f00"></path>
-                                <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <span class="new-badge">NEW</span>
-                        <h3>AI Sound Cypher Vol.28</h3>
-                        <p>2026.04.24放送</p>
-                    </div>
-                </a>
-
-                <!-- YouTube Video 2 - Vol.27 -->
-                <a href="https://youtu.be/ADJ8WPnHS0A" target="_blank" class="video-card glass">
-                    <div class="video-wrapper thumbnail-wrapper">
-                        <img src="https://img.youtube.com/vi/ADJ8WPnHS0A/maxresdefault.jpg" alt="AI Sound Cypher Vol.27"
-                            class="video-thumbnail">
-                        <div class="play-button">
-                            <svg viewBox="0 0 68 48" width="68" height="48">
-                                <path
-                                    d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
-                                    fill="#f00"></path>
-                                <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>AI Sound Cypher Vol.27</h3>
-                        <p>2026.04.17放送</p>
-                    </div>
-                </a>
-
-                <!-- YouTube Video 3 - Vol.26 -->
-                <a href="https://youtu.be/C_k7WzauS_Q" target="_blank" class="video-card glass">
-                    <div class="video-wrapper thumbnail-wrapper">
-                        <img src="https://img.youtube.com/vi/C_k7WzauS_Q/maxresdefault.jpg" alt="AI Sound Cypher Vol.26"
-                            class="video-thumbnail">
-                        <div class="play-button">
-                            <svg viewBox="0 0 68 48" width="68" height="48">
-                                <path
-                                    d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
-                                    fill="#f00"></path>
-                                <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>AI Sound Cypher Vol.26</h3>
-                        <p>2026.04.10放送</p>
-                    </div>
-                </a>
-            </div>
-            <a href="https://www.youtube.com/playlist?list=PLr6rVhgakBEN0j_TOFw_qQPwcyco1kFF_" target="_blank"
-                class="btn-primary">
-                YouTubeチャンネルを見る
-            </a>
-        </div>
-    </section>
-
-    <!-- Sticker Winner Section -->
-    <section class="sticker-winner" id="sticker">
-        <div class="container">
-            <h2 class="section-title">STICKER WINNER</h2>
-            <p class="section-subtitle">ステッカー当選者様へ</p>
-            <div class="sticker-content glass">
-                <p class="sticker-description">
-                    🎉 ステッカー当選おめでとうございます！<br>
-                    以下のフォームから送付先情報をご入力ください。
-                </p>
-                <a href="https://forms.gle/a3FjCd6CEHZaXnNq6" target="_blank" class="btn-sticker">
-                    📝 当選者フォームを開く
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>AI SOUND CYPHER</h3>
-                    <p>ラジオ川越88.7MHz</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">HOME</a>
-                    <a href="#about">ABOUT</a>
-                    <a href="#personality">PERSONALITY</a>
-                    <a href="#submit">SUBMIT</a>
-                    <a href="#listen">LISTEN</a>
-                    <a href="#archive">ARCHIVE</a>
-                </div>
-                <div class="footer-social">
-                    <a href="https://x.com/radiokawagoe" target="_blank" aria-label="X (Radio Kawagoe)">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCAyp331z0mP0K4hoxOOrUeQ" target="_blank"
-                        aria-label="YouTube (Radio Kawagoe)">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 AI Sound Cypher. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+        <a href="../" class="back-home">← AI Sound Cypher ホームへ戻る</a>
+    </div>
 </body>
-
 </html>
